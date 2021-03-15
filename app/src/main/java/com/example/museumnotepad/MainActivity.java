@@ -15,7 +15,7 @@ import com.example.museumnotepad.Fragments.TumFragment;
 public class MainActivity extends AppCompatActivity {
     Fragment selectedFragment=null;
 
-
+	//atakan.kalca
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
