@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/arka"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentTop="true"
+        android:alpha=".75"
+        android:background="#9a532b"
+        android:src="@drawable/anitkabir"/>
+
+    <LinearLayout
+        android:id="@+id/navi"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView"
+        android:background="#c49b60"
+        android:outlineProvider="background"
+        >
+
+        <Button
+            android:id="@+id/notlar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight=".50"
+            android:background="#9a532b"
+            android:textStyle="bold"
+            android:text="@string/frag1"
+            android:textSize="16sp"
+            android:textColor="#503143">
+
+        </Button>
+
+        <Button
+            android:id="@+id/tumu"
+            android:layout_width="wrap_content"
+            android:layout_weight=".50"
+            android:layout_height="match_parent"
+            android:text="@string/frag3"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="#9a532b"
+            android:textColor="#503143">
+
+        </Button>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navi" >
+
+        <Button
+            android:id="@+id/EkleButton"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#c49b60"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="#503143"
+            android:text="+" />
+    </FrameLayout>
+
+</RelativeLayout>

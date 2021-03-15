@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotAlma"
+    android:background="#9a532b">
+
+    <EditText
+        android:id="@+id/Baslik"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:hint="Başlık"
+        android:gravity="center"
+        android:background="#c49b60"
+        android:textColor="#193439"
+        android:maxLength="50"
+        />
+    <EditText
+        android:id="@+id/Not"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="10"
+        android:maxLines="20"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/Baslik"
+        android:layout_margin="25dp"
+        android:background="#c49b60"
+        android:hint="Notunuz..."
+        android:gravity="start"
+        android:textColor="#193439"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/NotuKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Not"
+        android:layout_centerHorizontal="true"
+        android:background="#c49b60"
+        android:textColor="#193439"
+        android:textStyle="bold"
+        android:text="Kaydet"
+        />
+
+</RelativeLayout>

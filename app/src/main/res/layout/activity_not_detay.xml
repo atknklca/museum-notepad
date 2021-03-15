@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotDetay"
+    android:background="#9a532b">
+
+    <TextView
+        android:id="@+id/baslikGoruntuleme"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:hint="Başlık"
+        android:gravity="center"
+        android:background="#c49b60"
+        android:textColor="#193439"
+        android:maxLength="50"
+        />
+    <TextView
+        android:id="@+id/notGoruntuleme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="20"
+        android:maxLines="25"
+        android:layout_below="@+id/baslikGoruntuleme"
+        android:layout_margin="25dp"
+        android:background="#c49b60"
+        android:hint="Notunuz..."
+        android:gravity="start"
+        android:textColor="#193439"
+        android:scrollbars="vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notGoruntuleme"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/geriDon"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#c49b60"
+            android:textColor="#193439"
+            android:textStyle="bold"
+            android:text="Geri Dön"
+            />
+        <Button
+            android:id="@+id/notuSil"
+            android:layout_margin="5dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="#c49b60"
+            android:textColor="#193439"
+            android:textStyle="bold"
+            android:text="Sil"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
