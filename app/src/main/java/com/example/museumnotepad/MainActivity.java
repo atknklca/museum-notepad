@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Fragment selectedFragment=null;
 
 	//atakan.kalca
+	//haydar.kalca
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
